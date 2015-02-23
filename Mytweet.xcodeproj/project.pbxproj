@@ -15,6 +15,11 @@
 		B88DB4761A9AD5C300BCFB9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88DB4751A9AD5C300BCFB9F /* Images.xcassets */; };
 		B88DB4791A9AD5C300BCFB9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B88DB4771A9AD5C300BCFB9F /* LaunchScreen.xib */; };
 		B88DB4851A9AD5C300BCFB9F /* MytweetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B88DB4841A9AD5C300BCFB9F /* MytweetTests.m */; };
+		B88DB48F1A9ADD5E00BCFB9F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DB48E1A9ADD5E00BCFB9F /* Accelerate.framework */; };
+		B88DB4911A9ADD6C00BCFB9F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DB4901A9ADD6C00BCFB9F /* Social.framework */; };
+		B88DB4931A9ADFD800BCFB9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DB4921A9ADFD800BCFB9F /* CoreGraphics.framework */; };
+		B88DB4951A9ADFE500BCFB9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DB4941A9ADFE500BCFB9F /* UIKit.framework */; };
+		B88DB4971A9AE00A00BCFB9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DB4961A9AE00A00BCFB9F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,11 @@
 		B88DB47E1A9AD5C300BCFB9F /* MytweetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MytweetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88DB4831A9AD5C300BCFB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B88DB4841A9AD5C300BCFB9F /* MytweetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MytweetTests.m; sourceTree = "<group>"; };
+		B88DB48E1A9ADD5E00BCFB9F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B88DB4901A9ADD6C00BCFB9F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B88DB4921A9ADFD800BCFB9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B88DB4941A9ADFE500BCFB9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B88DB4961A9AE00A00BCFB9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88DB4971A9AE00A00BCFB9F /* Foundation.framework in Frameworks */,
+				B88DB4951A9ADFE500BCFB9F /* UIKit.framework in Frameworks */,
+				B88DB4931A9ADFD800BCFB9F /* CoreGraphics.framework in Frameworks */,
+				B88DB4911A9ADD6C00BCFB9F /* Social.framework in Frameworks */,
+				B88DB48F1A9ADD5E00BCFB9F /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,11 @@
 		B88DB4641A9AD5C300BCFB9F /* Mytweet */ = {
 			isa = PBXGroup;
 			children = (
+				B88DB4941A9ADFE500BCFB9F /* UIKit.framework */,
+				B88DB4901A9ADD6C00BCFB9F /* Social.framework */,
+				B88DB48E1A9ADD5E00BCFB9F /* Accelerate.framework */,
+				B88DB4921A9ADFD800BCFB9F /* CoreGraphics.framework */,
+				B88DB4961A9AE00A00BCFB9F /* Foundation.framework */,
 				B88DB4691A9AD5C300BCFB9F /* AppDelegate.h */,
 				B88DB46A1A9AD5C300BCFB9F /* AppDelegate.m */,
 				B88DB46F1A9AD5C300BCFB9F /* ViewController.h */,
