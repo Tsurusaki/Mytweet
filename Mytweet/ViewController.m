@@ -30,7 +30,7 @@
     
 }
 
--(IBAction)refrashBotton{
+-(IBAction)refrashButton{
     [self twitterTimeline];
 }
 
@@ -42,7 +42,7 @@
 -(void)twitterTimeline{
     ACAccountStore *account = [[ACAccountStore alloc] init];
     ACAccountType *accountType =[account
-                                 accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     [account requestAccessToAccountsWithType:accountType
                                      options:nil
                                   completion:^(BOOL granted, NSError *error) 
@@ -53,16 +53,16 @@
                  ACAccount *twitterAccount = [arrayOfAccounts lastObject];
                  
                  
-                 NSURL *reqestAPI = [NSURL URLWithString:@"https://api.twitter.com/1.1/statuses/hpme_timeline.json"];
+                 NSURL *reqestAPI = [NSURL URLWithString:@"https://api.twitter.com/1.1/statuses/home_timeline.json"];
                  
-                 NSMutableDictionary *pramaters = [[NSMutableDictionary alloc]init];
-                 [pramaters setObject:@"100" forKey:@"count"];
-                 [pramaters setObject:@"1" forKey:@"include_entities"];
+                 NSMutableDictionary *paramaters = [[NSMutableDictionary alloc]init];
+                 [paramaters setObject:@"100" forKey:@"count"];
+                 [paramaters setObject:@"1" forKey:@"include_entities"];
                  
                  SLRequest *posts = [SLRequest requestForServiceType:SLServiceTypeTwitter
                                                        requestMethod:SLRequestMethodGET
-                                                                URL:reqestAPI
-                                                         parameters:pramaters
+                                                                 URL:reqestAPI
+                                                          parameters:paramaters
                                      ];
                                      
                                      posts.account = twitterAccount;
@@ -90,7 +90,35 @@
              
          }
      }];
+    
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableview{
+    return 1;
+    }
+    
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{retern [arry count];
+    }
+    
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath;(NSIndexPath *)indexPath:(NSIndexPath *)indexPath{
+        
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TweetCell"];
+        UITextView *TweetTextView = (UITextView *)[cell viewWithTag:3];
+        UILabel *userLabel = (UILabel *)[cell viewWithTag:1];
+        UILabel *userIDLabel = (UILabel *)[cell viewWithTag:2];
+        UIImageView *UserImageView = (UIImageView *)cell viewWithTag:4];
+        NSDictionary *tweet = array[indexPath.row];
+        NSDictionary *userInfo = tweet[@"user"];
+        
+        tweetTaxtView.text = [NSString stringWithFormat:@"%@",tweet[@"text"]];
+        userLabel.text = [NSString stringWithFormat:@"%@",userInfo[@"name"]];
+        userIDLabel.text = [NSString stringWithFormat:@"@%@",userInfo[@"screen_name"]];
+        
+        NSString *UserImagePath = userInfo[@"profile_image_url"];
+        NSURL *UserImaegPathUrl = [[NSURL alloc] initWithString:userImagePath];
+        NSData *userImagePathData = [[NSData alloc] initWithContentsOfURL:userImagePathUrl];
+        userImageView.image = [[[UIImage alloc]] initWithData:userImagePathData];
+        return cell;
+    {
 @end
-    //04-08まで終わった//
+    
     
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B87B0DDF1AA169BE00A69BA5 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87B0DDD1AA1699E00A69BA5 /* Accounts.framework */; };
 		B88DB4681A9AD5C300BCFB9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B88DB4671A9AD5C300BCFB9F /* main.m */; };
 		B88DB46B1A9AD5C300BCFB9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B88DB46A1A9AD5C300BCFB9F /* AppDelegate.m */; };
 		B88DB46E1A9AD5C300BCFB9F /* Mytweet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B88DB46C1A9AD5C300BCFB9F /* Mytweet.xcdatamodeld */; };
@@ -15,7 +16,6 @@
 		B88DB4761A9AD5C300BCFB9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88DB4751A9AD5C300BCFB9F /* Images.xcassets */; };
 		B88DB4791A9AD5C300BCFB9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B88DB4771A9AD5C300BCFB9F /* LaunchScreen.xib */; };
 		B88DB4851A9AD5C300BCFB9F /* MytweetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B88DB4841A9AD5C300BCFB9F /* MytweetTests.m */; };
-		B88DB48F1A9ADD5E00BCFB9F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DB48E1A9ADD5E00BCFB9F /* Accelerate.framework */; };
 		B88DB4911A9ADD6C00BCFB9F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DB4901A9ADD6C00BCFB9F /* Social.framework */; };
 		B88DB4931A9ADFD800BCFB9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DB4921A9ADFD800BCFB9F /* CoreGraphics.framework */; };
 		B88DB4951A9ADFE500BCFB9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DB4941A9ADFE500BCFB9F /* UIKit.framework */; };
@@ -33,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B87B0DDD1AA1699E00A69BA5 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B88DB4621A9AD5C300BCFB9F /* Mytweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mytweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88DB4661A9AD5C300BCFB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B88DB4671A9AD5C300BCFB9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,11 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87B0DDF1AA169BE00A69BA5 /* Accounts.framework in Frameworks */,
 				B88DB4971A9AE00A00BCFB9F /* Foundation.framework in Frameworks */,
 				B88DB4951A9ADFE500BCFB9F /* UIKit.framework in Frameworks */,
 				B88DB4931A9ADFD800BCFB9F /* CoreGraphics.framework in Frameworks */,
 				B88DB4911A9ADD6C00BCFB9F /* Social.framework in Frameworks */,
-				B88DB48F1A9ADD5E00BCFB9F /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +81,7 @@
 		B88DB4591A9AD5C300BCFB9F = {
 			isa = PBXGroup;
 			children = (
+				B88DB48E1A9ADD5E00BCFB9F /* Accelerate.framework */,
 				B88DB4641A9AD5C300BCFB9F /* Mytweet */,
 				B88DB4811A9AD5C300BCFB9F /* MytweetTests */,
 				B88DB4631A9AD5C300BCFB9F /* Products */,
@@ -98,9 +100,9 @@
 		B88DB4641A9AD5C300BCFB9F /* Mytweet */ = {
 			isa = PBXGroup;
 			children = (
+				B87B0DDD1AA1699E00A69BA5 /* Accounts.framework */,
 				B88DB4941A9ADFE500BCFB9F /* UIKit.framework */,
 				B88DB4901A9ADD6C00BCFB9F /* Social.framework */,
-				B88DB48E1A9ADD5E00BCFB9F /* Accelerate.framework */,
 				B88DB4921A9ADFD800BCFB9F /* CoreGraphics.framework */,
 				B88DB4961A9AE00A00BCFB9F /* Foundation.framework */,
 				B88DB4691A9AD5C300BCFB9F /* AppDelegate.h */,
@@ -436,6 +438,7 @@
 				B88DB48A1A9AD5C300BCFB9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B88DB48B1A9AD5C300BCFB9F /* Build configuration list for PBXNativeTarget "MytweetTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +447,7 @@
 				B88DB48D1A9AD5C300BCFB9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
